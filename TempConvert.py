@@ -1,17 +1,19 @@
 #TempConvert.py
-#Name:
-#Date:
-#Assignment:
+#Name: Salsabiel Khair Allah
+#Date: Sep.14
+#Assignment: Lab 3
 
 
 def main():
-  #Prompt the user for a Fahrenheit temperature
-  #Convert that temperature to celsius, rounding to 1 decimal percision
-  #Output converted temperature.
-  tempF = 80
+    # Prompt the user for a Fahrenheit temperature
+    tempF = float(input("Enter temperature in Fahrenheit: "))
 
-  tempC = tempF / 2
+    # Convert that temperature to Celsius, rounding to 1 decimal precision
+    tempC = round((5/9) * (tempF - 32), 1)
 
-  print(tempF, "is ", tempC, "degrees celsius.")
+    # Output converted temperature
+    print(tempF, "degrees Fahrenheit is", tempC, "degrees Celsius.")
+
 if __name__ == '__main__':
-  main()
+    main()
+
